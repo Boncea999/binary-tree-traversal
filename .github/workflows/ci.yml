@@ -1,3 +1,5 @@
+
+
 name: C CI/CD
 
 on:
@@ -20,7 +22,7 @@ jobs:
       run: sudo apt-get install build-essential
 
     - name: Compile code
-      run: gcc -o binary_tree binary_tree.c
+      run: gcc -o binary_tree src/binary_tree.c
 
     - name: Run tests
       run: ./binary_tree
