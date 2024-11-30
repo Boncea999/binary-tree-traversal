@@ -70,3 +70,31 @@ void levelOrder(struct Node* root) {
         }
     }
 }
+int main() {
+    Node* root = NULL;
+    root = insert(root, 50);
+    root = insert(root, 30);
+    root = insert(root, 20);
+    root = insert(root, 40);
+    root = insert(root, 70);
+    root = insert(root, 60);
+    root = insert(root, 80);
+
+    printf("Pre-order Traversal: ");
+    preOrder(root);
+    printf("\n");
+
+    printf("In-order Traversal: ");
+    inOrder(root);
+    printf("\n");
+
+    printf("Post-order Traversal: ");
+    postOrder(root);
+    printf("\n");
+
+    printf("Level-order Traversal: ");
+    levelOrder(root);
+    printf("\n");
+
+    return 0;
+}
